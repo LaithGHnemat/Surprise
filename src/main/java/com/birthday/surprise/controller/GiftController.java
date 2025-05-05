@@ -21,7 +21,6 @@ public class GiftController {
         String message=giftService.getTheGift();
         return ResponseEntity.ok(message);
     }
-
     @GetMapping("/pod-ip") //localhost:8080/pod-ip
     public ResponseEntity<String> getPodIp() {
         try {
@@ -31,6 +30,4 @@ public class GiftController {
             return ResponseEntity.status(500).body("Unable to fetch IP address");
         }
     }
-
-
 }

@@ -8,7 +8,7 @@ import lombok.Data;
 
 public class Gift {
 
-     private String from;
+    private String from;
      private String to;
      private String message;
 
@@ -22,9 +22,5 @@ public class Gift {
                 "ZiB5b3Vyc2VsZi4uSSBsb3ZlIHlvdSBhIGxvdC4uCiBmYWxsb3cgdGhlI" +
                 "GxpbmsgYW5kICBsaXN0ZW4gdG8gdGhpcyBzb25nIHBsZWFzZSA6Cmh0dHBz" +
                 "Oi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9aG5oMHlVNWVmNFUKCgoK";
-
     }
-
-
-
 }
