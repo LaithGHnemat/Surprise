@@ -17,8 +17,11 @@ public class GiftController {
     @GetMapping(value = "/yourGift", produces = MediaType.TEXT_HTML_VALUE)
     public ResponseEntity<String> getTheGiftMessageHtml() {
         String message = giftService.getTheGift().toString();
-        String html = "<html><body style='direction: rtl; font-family:" +
-                " Arial, sans-serif; white-space: pre-wrap;'>" +
+        String html = "<html><body style=\"direction: rtl; font-family:" +
+                " Arial, sans-serif; white-space: pre-wrap;" +
+                " font-size: 24px; text-align: center; padding: 50px;" +
+                " background: linear-gradient(135deg, #dbeafe, #f0fdfa);" +
+                " color: #222; border-radius: 12px;\">" +
                 message.replace("\n", "<br>") +
                 "</body></html>";
         return ResponseEntity.ok(html);
